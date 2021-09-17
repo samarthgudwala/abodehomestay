@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abode Homestay - Jaipur</title>
+    <link rel="shortcut icon" href="img/Picture2.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Smooth Scroll Java Script -->
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="heroSection" class="hero-container">
+      <header class="hero-header">
+        <a href="#heroSection"><img class="logo" src="img/Picture8.png" /></a>
+        <nav>
+          <ul>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li><a href="#facilities" class="nav-link">Facilities</a></li>
+            <li><a href="#photoGallery  " class="nav-link">Gallery</a></li>
+            <li><a href="#faq-section" class="nav-link">Contact Us</a></li>
+            <li>
+              <a href="#bookingSection" class="nav-link btn btn-solid"
+                >Book Now</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero-section">
+        <div>
+          <h1 class="hero-heading">Comfortable stays at an affordable price</h1>
+          <p class="hero-text">
+            A family friendly homestay with all the necessary ameneties for a
+            comfortable stay, located at a prime location in Jaipur. Attending
+            to out customers for upwards of 3 years.
+          </p>
+          <div>
+            <a
+              href="#bookingSection"
+              class="btn btn-solid"
+              style="margin-right: 1.6rem"
+              >Book Now</a
+            >
+            <a href="#featured-in" class="btn btn-hollow">Learn More &darr;</a>
+          </div>
+          <div class="stars">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-star"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                />
+              </svg>
+            </span>
+            <span class="rating-text"><span>4+</span> Star Rating</span>
+          </div>
+        </div>
+        <img class="hero-image" src="img/undraw_Travelers_re_y25a.svg" />
+      </section>
+    </div>
+    <span class="anchor-featured" id="featured-in"></span>
+    <div class="m-sm container">
+      <p class="featured-in-text">Listed and Trusted By</p>
+      <div class="featured-companies">
+        <!-- <img src="img/cleartrip-logo.png" alt="" /> -->
+        <!-- <img src="img/mmt.png" alt="" /> -->
+        <img src="img/agoda.png" alt="" />
+        <img src="img/goibibo.png" alt="" />
+        <img src="img/booking.png" alt="" />
+        <img src="img/yatra.png" alt="" />
+        <img src="img/Trivago-logo.png" alt="" />
+      </div>
+    </div>
+    <span class="anchor" id="testimonials"></span>
+    <section class="container m-sm">
+      <h2 class="testimonial-section-heading">Words from out customers</h2>
+      <div id="carouselContainer" class="carousel">
+        <blockquote class="testimonial fade t1">
+          <p class="testimonial-text">
+            "Good location and nice ambiance. The entrance itself is quite
+            pleasing. The rooms are nice, clean and spacious. The owner is quite
+            nice and polite and the service is good. It will feel like a nice
+            hotel stay at really affordable rates. Unlike many home stays, there
+            is no time restrictions at night."
+          </p>
+          <p class="testimonial-author">Palashranjan Sachdeva</p>
+          <p class="testimonial-job">Travelling Alone</p>
+        </blockquote>
+        <blockquote class="testimonial fade t2">
+          <p class="testimonial-text">
+            "It was wonderful experience at Abode Homestay. It’s home away from
+            home. Host is amazing person. Their service their hospitality and
+            overall experience at Abode is beyond my expectations. Highly
+            recommend this to all guests."
+          </p>
+          <p class="testimonial-author">Pooja Sharma</p>
+          <p class="testimonial-job">Business Visit</p>
+        </blockquote>
+        <blockquote class="testimonial fade t3">
+          <p class="testimonial-text">
+            "I stayed for 2 weeks with my kid, he loved greenery and swing. The
+            kitchenette was very handy for my family needs. Large rooms,
+            cleanest bathroom, very good location, near market, welcoming host
+            ready to solve any problem. Best place to stay at Jaipur, just felt
+            like home."
+          </p>
+          <p class="testimonial-author">Neetu Jain</p>
+          <p class="testimonial-purpose">Family Stay</p>
+        </blockquote>
+        <blockquote class="testimonial fade t4">
+          <p class="testimonial-text">
+            "The hosting was quite smooth and good. The polite behaviour of
+            host, clean rooms, and with great location make the abode home best
+            place to stay. Really happy to stay here. Thank You Abode Homestay."
+          </p>
+          <p class="testimonial-author">Manohar Lal</p>
+          <p class="testimonial-job">Trip with friends</p>
+        </blockquote>
+        <blockquote class="testimonial fade t5">
+          <p class="testimonial-text">
+            "Highly recommended, peaceful, clean rooms, clean toilets,
+            reasonable price, with kitchen facilities❤️❤️❤️ We came with
+            families from age 2 to 65 and they enjoyed a lot, kitchen facility
+            is awesome i have rarely seen in hotels, whatever you want to cook
+            you can over induction😍😍"
+          </p>
+          <p class="testimonial-author">Preeti Thakur</p>
+          <p class="testimonial-job">Family Visit</p>
+        </blockquote>
+        <button id="left" onclick="plusSlides(-1)" class="btn-c btn--left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="btn-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+        <button id="right" onclick="plusSlides(+1)" class="btn-c btn--right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="btn-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+        <div class="dots">
+          <button onclick="currentSlide(1)" class="dot dot--fill">
+            &nbsp;
+          </button>
+          <button onclick="currentSlide(2)" class="dot">&nbsp;</button>
+          <button onclick="currentSlide(3)" class="dot">&nbsp;</button>
+          <button onclick="currentSlide(4)" class="dot">&nbsp;</button>
+          <button onclick="currentSlide(5)" class="dot">&nbsp;</button>
+        </div>
+      </div>
+    </section>
+    <span class="anchor" id="bookingSection"></span>
+    <section class="booking-section container">
+      <img src="img/undraw_Travel_booking_re_6umu.svg" alt="" />
+      <div id="bookingSectionContainer">
+        <h2 class="booknow-heading">Book Now</h2>
+        <form id="bookingForm" class="booking-form">
+          <div>
+            <label class="label-book" for="checkindate">Check-in Date:</label>
+            <input
+              name="date"
+              id="checkindate"
+              type="text"
+              placeholder="DD-MMM-YYYY"
+              onfocus="(this.type='date')"
+              onblur="if(!this.value)this.type='text'"
+            />
+            <p id="checkinErr" class="errMessage"></p>
+          </div>
+          <div>
+            <label class="label-book" for="checkoutdate">Check-out Date:</label>
+            <input
+              name="date"
+              id="checkoutdate"
+              type="text"
+              placeholder="DD-MMM-YYYY"
+              onfocus="(this.type='date')"
+              onblur="if(!this.value)this.type='text'"
+            />
+            <p id="checkoutErr" class="errMessage"></p>
+          </div>
+          <div>
+            <label class="label-book" for="adults">Number of adults:</label>
+            <select id="adults" name="adults">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+          <div>
+            <label class="label-book" for="child">Number of children:</label>
+            <select id="child" name="child">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <a href="#" id="submitButton" class="btn btn-solid check-btn">
+            Check Availability
+          </a>
+        </form>
+        <div id="roomBookContainer" class="hide">
+          <div class="room-book-container">
+            <div class="room-text-container">
+              <h3 class="room-text-heading">1x Super Deluxe Room</h3>
+              <div class="noPeople stayDates">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="datesicon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <p class="dates-text">2 nights</p>
+              </div>
+              <div class="stayDates">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="datesicon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+                <p class="dates-text">18-Sep-2021 - 20-Sep-2021</p>
+              </div>
+              <div class="noNights stayDates">
+                <ion-icon
+                  style="font-size: 2.4rem"
+                  name="people-outline"
+                ></ion-icon>
+                <p class="dates-text">2-adults & 2-children</p>
+              </div>
+            </div>
+            <div class="room-price-container">
+              <h2>&#8377; 678/-</h2>
+            </div>
+          </div>
+          <a href="#" class="btn-booking">Book Now</a>
+        </div>
+      </div>
+    </section>
+    <span class="anchor" id="facilities"></span>
+    <section class="facilities-section container">
+      <h2 class="facilities-section-heading">Facilities</h2>
+      <div class="feature-card">
+        <div class="feature-icon-box">
+          <img class="feature-icon" src="img/family-svgrepo-com.svg" />
+        </div>
+        <h3 class="feature-name">Family Friendly</h3>
+        <p class="feature-description">
+          Located in a calm and peaceful locality suited for family stays.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-box">
+          <img class="feature-icon" src="img/coffee-machine-svgrepo-com.svg" />
+        </div>
+        <h3 class="feature-name">Tea/Coffee Machine:</h3>
+        <p class="feature-description">
+          Machine serving tea and coffee available.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-box">
+          <img class="feature-icon" src="img/kitchen symbol (1).svg" />
+        </div>
+        <h3 class="feature-name">Useful kitchenette:</h3>
+        <p class="feature-description">
+          Common kitchenette equipped with inductions, sinks, fridge, water 8
+          purifiers cooking utensils.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-box">
+          <img class="feature-icon" src="img/Picture1.png" />
+        </div>
+        <h3 class="feature-name">Dynamic Pricing:</h3>
+        <p class="feature-description">
+          Flexible pricing based on your needs, and number of occupants.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-box">
+          <img class="feature-icon" src="img/savings-svgrepo-com.svg" />
+        </div>
+        <h3 class="feature-name">Economical</h3>
+        <p class="feature-description">
+          Competitive pricing to suit everybody's wallets.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-box">
+          <img class="feature-icon" src="img/clean-svgrepo-com.svg" />
+        </div>
+        <h3 class="feature-name">Hygienic</h3>
+        <p class="feature-description">Regularly cleaned hygienic rooms.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-box">
+          <!-- <img class="feature-icon" src="img/wifi-svgrepo-com.svg" />
+          <img
+            class="feature-icon"
+            src="img/https://img.icons8.com/external-those-icons-lineal-those-icons/24/000000/external-wifi-mobile-telephone-those-icons-lineal-those-icons.png"
+          /> -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="feature-icon"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 16.32c.843 0 1.65.257 2.345.735l-2.345 2.487-2.345-2.487c.695-.478 1.502-.735 2.345-.735zm0-1c-1.479 0-2.817.636-3.787 1.664l3.787 4.016 3.787-4.016c-.97-1.028-2.308-1.664-3.787-1.664zm0-5.116c2.387 0 4.648.876 6.461 2.485l-.969 1.028c-1.556-1.308-3.472-2.018-5.492-2.018-2.021 0-3.937.71-5.492 2.018l-.969-1.028c1.813-1.609 4.074-2.485 6.461-2.485zm0-1c-3.071 0-5.852 1.32-7.864 3.455l2.33 2.472c1.417-1.502 3.373-2.431 5.534-2.431s4.117.929 5.534 2.431l2.33-2.472c-2.012-2.135-4.793-3.455-7.864-3.455zm0-5.204c3.949 0 7.682 1.517 10.607 4.291l-1.021 1.083c-2.656-2.452-6.023-3.791-9.586-3.791s-6.93 1.339-9.586 3.791l-1.021-1.083c2.925-2.774 6.658-4.291 10.607-4.291zm0-1c-4.687 0-8.929 2.015-12 5.272l2.389 2.533c2.459-2.609 5.857-4.222 9.611-4.222s7.152 1.613 9.611 4.222l2.389-2.533c-3.071-3.257-7.313-5.272-12-5.272z"
+            />
+          </svg>
+        </div>
+        <h3 class="feature-name">Unlimited Wifi</h3>
+        <p class="feature-description">
+          Free unlimited high speed wifi for all your devices.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-box">
+          <img class="feature-icon" src="img/air-conditioner-svgrepo-com.svg" />
+        </div>
+        <h3 class="feature-name">Necessary Ameneties:</h3>
+        <p class="feature-description">
+          All rooms equipped with Airconditioners, televisions, geysers.
+        </p>
+      </div>
+    </section>
+    <span class="anchor" id="photoGallery"></span>
+    <section class="gallery-section container">
+      <h2 class="gallery-heading">Photo Gallery</h2>
+      <div class="gallery-img-container size-big-1">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+      <div class="gallery-img-container">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+      <div class="gallery-img-container">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+      <div class="gallery-img-container">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+      <div class="gallery-img-container">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+      <div class="gallery-img-container size-big-2">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+      <div class="gallery-img-container">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+      <div class="gallery-img-container">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+      <div class="gallery-img-container">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+      <div class="gallery-img-container">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+      <div class="gallery-img-container size-big-3">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+      <div class="gallery-img-container">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+      <div class="gallery-img-container">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+      <div class="gallery-img-container">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+      <div class="gallery-img-container">
+        <img src="img/vojtech-bruzek-Yrxr3bsPdS0-unsplash (1).jpg" />
+      </div>
+    </section>
+    <span class="anchor" id="faq-section"></span>
+    <div class="faq-section container">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <div id="faq1" class="faq-item">
+        <p class="q-number">01</p>
+        <p class="q-text">Do you provide breakfast?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="faq-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          id="toggle3"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="faq-answer">
+          <p>
+            No, breakfast facilities are not available on the premises. However
+            tea and coffee machine is available on charged basis for
+            self-service. Ample of cafes and restaurants in the vicinity may be
+            used.
+          </p>
+        </div>
+      </div>
+      <div id="faq2" class="faq-item">
+        <p class="q-number">02</p>
+        <p class="q-text">Is parking available?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="faq-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          id="toggle3"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="faq-answer">
+          <p>
+            Parking space on a common street is available. No provision of
+            parking within the premises.
+          </p>
+        </div>
+      </div>
+      <div id="faq3" class="faq-item">
+        <p class="q-number">03</p>
+        <p class="q-text">Are there any time restrictions?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="faq-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          id="toggle3"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="faq-answer">
+          <p>
+            No, there are no time constraints, premises remain open 24/7.
+            <br />
+            Check-out timings are fixed (11am).
+          </p>
+        </div>
+      </div>
+      <div id="faq4" class="faq-item">
+        <p class="q-number">04</p>
+        <p class="q-text">Are housekeeping services present?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="faq-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          id="toggle3"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="faq-answer">
+          <p>
+            Housekeeping services can be availed once a day at 11am daily for
+            cleaning, except that there are no other services provided.
+            <br />
+            Kitchenette is accessible on self-service basis.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <section class="contact-us-section container">
+      <div>
+        <h2 class="contact-us-heading">Contact Us</h2>
+        <p></p>
+      </div>
+      <img src="img/undraw_contact_us_15o2.svg" />
+    </section> -->
+    <section class="footer-section">
+      <div class="footer-container">
+        <div class="col-1-footer">
+          <div>
+            <a href="#heroSection"
+              ><img class="logo" src="img/Picture8.png"
+            /></a>
+            <div class="connections">
+              <a
+                href="https://api.whatsapp.com/send?phone=+9184548%2066103"
+                target="_blank"
+                ><div><img src="img/whatsapp-4451.svg" alt="" /></div>
+              </a>
+              <a href="tel:+918454866103"
+                ><div><img src="img/phone-3114.svg" alt="" /></div
+              ></a>
+              <a href="mailto:">
+                <div><img src="img/mail-5888.svg" alt="" /></div>
+              </a>
+              <a
+                href="https://www.google.com/maps/place/Abode+Homestay/@26.9014277,75.7493363,17z/data=!3m1!4b1!4m8!3m7!1s0x396db48f98c42657:0xb39c47abdc8d0e2d!5m2!4m1!1i2!8m2!3d26.9014229!4d75.7515303"
+                target="_blank"
+                ><div><img src="img/location-2952.svg" alt="" /></div
+              ></a>
+            </div>
+          </div>
+          <div>
+            <p>Copyright © 2021 by Gudwala Ventures.</p>
+            <p>All rights reserved.</p>
+          </div>
+        </div>
+        <div>Contact Us Address mail phone number</div>
+        <div class="footer-sitemap">
+          <p>Site Map, Rights reserved</p>
+          <ul>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#photoGallery  ">Gallery</a></li>
+            <li><a href="#faq-section">Contact Us</a></li>
+            <li><a href="#bookingSection">Book Now</a></li>
+          </ul>
+        </div>
+        <div id="GoogleMap">
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="brain.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
+      async
+    ></script>
+  </body>
+</html>
