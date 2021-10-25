@@ -1,11 +1,8 @@
 # AbodeHomestay
-project for a local hotel/homestay based in jaipur
-
-Project included webdesigning and development
+Project for a local hotel/homestay based in Jaipur, the project included webdesigning and development
 
 
-responsive website
-made using HTML, CSS and JavaScript from scratch
+responsive website made using HTML, CSS and JavaScript from scratch
 
 
 used flexbox, CSS Grid, Illustrations and SVGs, with hover effects on links, buttons, images and feature cards
